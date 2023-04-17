@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div> Zoomeed </div>;
+  return <div className="font-bold shadow"> Zoomeed </div>;
 }
