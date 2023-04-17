@@ -6,6 +6,10 @@ export const metadata = {
   description: "Zoomeed educational",
 };
 
+const font = Nunito({
+  subsets: ["latin-ext"],
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -13,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
