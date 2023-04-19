@@ -1,10 +1,6 @@
 self.__NEXT_FONT_MANIFEST={
   "pages": {},
-  "app": {
-    "/home/tomasz/Desktop/zoomeed/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Nunito\",\"arguments\":[{\"subsets\":[\"latin-ext\"]}],\"variableName\":\"font\"}": [
-      "static/media/dc9ab78c2735f6b0-s.p.woff2"
-    ]
-  },
-  "appUsingSizeAdjust": true,
+  "app": {},
+  "appUsingSizeAdjust": false,
   "pagesUsingSizeAdjust": false
 }
