@@ -2972,6 +2972,32 @@
         "async": false
       }
     },
+    "(app-client)/./app/components/navbar/UserMenu.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/UserMenu.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/UserMenu.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/UserMenu.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -9592,6 +9618,30 @@
     },
     "/home/tomasz/Desktop/zoomeed/app/components/navbar/Search.tsx#default": {
       "id": "(app-client)/./app/components/navbar/Search.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/navbar/UserMenu.tsx": {
+      "id": "(app-client)/./app/components/navbar/UserMenu.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/navbar/UserMenu.tsx#": {
+      "id": "(app-client)/./app/components/navbar/UserMenu.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/navbar/UserMenu.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/UserMenu.tsx",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
