@@ -2920,6 +2920,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/components/ClientOnly.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/ClientOnly.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/ClientOnly.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/ClientOnly.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/Container.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/Container.tsx",
@@ -9648,6 +9674,30 @@ self.__RSC_MANIFEST={
     },
     "/home/tomasz/Desktop/zoomeed/app/components/Avatar.tsx#default": {
       "id": "(app-client)/./app/components/Avatar.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/ClientOnly.tsx": {
+      "id": "(app-client)/./app/components/ClientOnly.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/ClientOnly.tsx#": {
+      "id": "(app-client)/./app/components/ClientOnly.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/ClientOnly.tsx#default": {
+      "id": "(app-client)/./app/components/ClientOnly.tsx",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
