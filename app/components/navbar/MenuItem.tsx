@@ -20,7 +20,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ onClick, label }) => {
       {label};
     </div>
   );
-  console.log(`${onClick}`);
+
 };
 
 export default MenuItem;
