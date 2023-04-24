@@ -38,15 +38,20 @@ const RegisterModal = () => {
         setIsLoading(false);
       });
   };
-
+  const bodyContent = (
+    <div className="flex flex-col gap-4">
+      It's Modal body, ready to fetch some content
+    </div>
+  );
   return (
     <Modal
       disabled={isLoading}
       isOpen={registerModal.isOpen}
       title="Register"
       actionLabel="Continue"
-          onClose={registerModal.onClose}
-          onSubmit={handleSubmit(onSubmit)}
+      onClose={registerModal.onClose}
+      onSubmit={handleSubmit(onSubmit)}
+      body={bodyContent}
     />
   );
 };
