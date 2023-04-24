@@ -7,3 +7,5 @@ next
 pack
 webpack.js
 pack.old
+.next/cache/webpack/client-development/*.pack
+.next/cache/webpack/client-development/*.old
