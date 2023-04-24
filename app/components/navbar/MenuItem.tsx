@@ -17,10 +17,9 @@ const MenuItem: React.FC<MenuItemProps> = ({ onClick, label }) => {
         font-semibold
       "
     >
-      {label};
+      {label}
     </div>
   );
-
 };
 
 export default MenuItem;
