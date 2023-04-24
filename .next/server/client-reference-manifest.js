@@ -3128,6 +3128,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/hooks/useRegisterModal.ts": {
+      "*": {
+        "id": "(sc_client)/./app/hooks/useRegisterModal.ts",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/hooks/useRegisterModal.ts",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/hooks/useRegisterModal.ts",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -9892,6 +9918,30 @@ self.__RSC_MANIFEST={
     },
     "/home/tomasz/Desktop/zoomeed/app/components/navbar/UserMenu.tsx#default": {
       "id": "(app-client)/./app/components/navbar/UserMenu.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/hooks/useRegisterModal.ts": {
+      "id": "(app-client)/./app/hooks/useRegisterModal.ts",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/hooks/useRegisterModal.ts#": {
+      "id": "(app-client)/./app/hooks/useRegisterModal.ts",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/hooks/useRegisterModal.ts#default": {
+      "id": "(app-client)/./app/hooks/useRegisterModal.ts",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
