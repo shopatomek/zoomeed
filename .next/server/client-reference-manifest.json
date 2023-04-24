@@ -2920,6 +2920,32 @@
         "async": false
       }
     },
+    "(app-client)/./app/components/Button.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/Button.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/Button.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/Button.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/ClientOnly.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/ClientOnly.tsx",
@@ -2965,6 +2991,32 @@
       },
       "default": {
         "id": "(sc_client)/./app/components/Container.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/modals/Modal.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/modals/Modal.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/modals/Modal.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/modals/Modal.tsx",
         "name": "default",
         "chunks": [
           "app/layout:app/layout"
@@ -9732,6 +9784,30 @@
       ],
       "async": false
     },
+    "/home/tomasz/Desktop/zoomeed/app/components/Button.tsx": {
+      "id": "(app-client)/./app/components/Button.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/Button.tsx#": {
+      "id": "(app-client)/./app/components/Button.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/Button.tsx#default": {
+      "id": "(app-client)/./app/components/Button.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
     "/home/tomasz/Desktop/zoomeed/app/components/ClientOnly.tsx": {
       "id": "(app-client)/./app/components/ClientOnly.tsx",
       "name": "*",
@@ -9774,6 +9850,30 @@
     },
     "/home/tomasz/Desktop/zoomeed/app/components/Container.tsx#default": {
       "id": "(app-client)/./app/components/Container.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/modals/Modal.tsx": {
+      "id": "(app-client)/./app/components/modals/Modal.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/modals/Modal.tsx#": {
+      "id": "(app-client)/./app/components/modals/Modal.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/modals/Modal.tsx#default": {
+      "id": "(app-client)/./app/components/modals/Modal.tsx",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
