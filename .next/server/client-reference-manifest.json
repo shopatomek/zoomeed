@@ -2998,6 +2998,32 @@
         "async": false
       }
     },
+    "(app-client)/./app/components/Heading.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/Heading.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/Heading.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/Heading.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/modals/Modal.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/modals/Modal.tsx",
@@ -9850,6 +9876,30 @@
     },
     "/home/tomasz/Desktop/zoomeed/app/components/Container.tsx#default": {
       "id": "(app-client)/./app/components/Container.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/Heading.tsx": {
+      "id": "(app-client)/./app/components/Heading.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/Heading.tsx#": {
+      "id": "(app-client)/./app/components/Heading.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/home/tomasz/Desktop/zoomeed/app/components/Heading.tsx#default": {
+      "id": "(app-client)/./app/components/Heading.tsx",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
