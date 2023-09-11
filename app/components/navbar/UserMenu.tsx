@@ -6,8 +6,12 @@ import MenuItem from "../navbar/MenuItem";
 import { useCallback, useState } from "react";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
+import { User } from "@prisma/client";
 
-const UserMenu = () => {
+interface UserMenuProps {
+  currentUser?: User | null;
+}
+const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
   const [isOpen, setIsOpen] = useState(false);
@@ -49,10 +53,21 @@ const UserMenu = () => {
       {isOpen && (
         <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/ bg-white overflow-hidden right-0 top-12 text-sm">
           <div className="flex flex-col cursor-pointer">
-            <>
-              <MenuItem label="Login" onClick={loginModal.onOpen} />
-              <MenuItem onClick={registerModal.onOpen} label="Sign-up" />
-            </>
+            {currentUser ? (
+              <>
+                <MenuItem label="My trips" onClick={() => {}} />
+                <MenuItem label="Favorites" onClick={() => {}} />
+                <MenuItem label="Reservations" onClick={() => {}} />
+                <MenuItem label="Properties" onClick={() => {}} />
+                <MenuItem label="Airnb my home" onClick={() => {}} />
+                <MenuItem onClick={() => {}} label="Logout" />
+              </>
+            ) : (
+              <>
+                <MenuItem label="Login" onClick={loginModal.onOpen} />
+                <MenuItem onClick={registerModal.onOpen} label="Sign-up" />
+              </>
+            )}
           </div>
         </div>
       )}
@@ -61,3 +76,4 @@ const UserMenu = () => {
 };
 
 export default UserMenu;
+// Ten fragment kodu to funkcjonalny komponent w React o nazwie UserMenu. Renderuje on menu użytkownika z kilkoma opcjami. Komponent korzysta z hooków Reacta takich jak useState i useCallback do zarządzania stanem i obsługi interakcji użytkownika. Po kliknięciu ikony menu, przełącza on widoczność menu rozwijanego. Menu rozwijane zawiera opcje logowania i rejestracji, które są obsługiwane przez loginModal.onOpen i registerModal.onOpen odpowiednio.
