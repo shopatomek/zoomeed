@@ -26,4 +26,6 @@ export default client;
 
 // Dzięki użyciu globalThis i zmiennej globalnej prisma, można mieć tylko jedną instancję PrismaClient w aplikacji i mieć do niej dostęp z dowolnego miejsca w kodzie, nawet jeśli zmienna client została zainicjalizowana tylko raz.
 
-// 
+// PRISMA VERCEL DEPOY CONFIG
+
+// https://www.prisma.io/docs/guides/other/troubleshooting-orm/help-articles/vercel-caching-issue
