@@ -77,5 +77,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   );
 };
 
+// After the logging in, the user will se 5 options in the menu: My trips, Favorites, Reservations, Properties, Airnb my home. The only 2 options are Login and Sign-up after successfully loggin out,.
+
 export default UserMenu;
 // Ten fragment kodu to funkcjonalny komponent w React o nazwie UserMenu. Renderuje on menu użytkownika z kilkoma opcjami. Komponent korzysta z hooków Reacta takich jak useState i useCallback do zarządzania stanem i obsługi interakcji użytkownika. Po kliknięciu ikony menu, przełącza on widoczność menu rozwijanego. Menu rozwijane zawiera opcje logowania i rejestracji, które są obsługiwane przez loginModal.onOpen i registerModal.onOpen odpowiednio.
