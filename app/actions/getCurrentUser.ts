@@ -28,7 +28,7 @@ export default async function getCurrentUser() {
     return null;
    }
 }
-
+// 
 // Kod, który przedstawiłeś, jest modułem w języku JavaScript i zawiera dwie eksportowane funkcje: getSession i getCurrentUser. Oto wyjaśnienie kodu, opierając się na wcześniejszych wyjaśnieniach:
 
 // Pierwsze dwie linie kodu importują funkcję getServerSession z modułu "next-auth/next", obiekt authOptions z pliku "@/pages/api/auth/[...nextauth]", oraz moduł prisma z "@/app/libs/prismadb".
