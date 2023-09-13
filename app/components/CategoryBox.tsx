@@ -1,4 +1,7 @@
+import { useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 import { IconType } from "react-icons";
+import qs from "query-string";
 
 interface CategoryBoxProps {
   icon: IconType;
@@ -11,6 +14,12 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
   label,
   selected,
 }) => {
+  const router = useRouter();
+  const params = useSearchParams();
+
+  const handleClick = useCallback(() => {
+    let currentQuery = {};
+  }, []);
   return (
     <div
       className={`
