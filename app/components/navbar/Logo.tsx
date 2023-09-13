@@ -8,6 +8,7 @@ const Logo = () => {
   return (
     <Image
       onClick={() => router.push("/")}
+      // kliknięcie resetuje zaznaczone kategorie i przekierowuje użytkownika na strone główną
       alt="Logo"
       className="md:block cursor-pointer"
       height="100"
