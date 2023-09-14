@@ -11,8 +11,8 @@ const Logo = () => {
       // kliknięcie resetuje zaznaczone kategorie i przekierowuje użytkownika na strone główną
       alt="Logo"
       className="md:block cursor-pointer"
-      height="100"
-      width="100"
+      height="60"
+      width="60"
       src="/images/logo.png"
     />
   );
