@@ -49,6 +49,12 @@ const LoginModal = () => {
       }
     });
   };
+
+  const toggle = useCallback(() => {
+    loginModal.onClose();
+    registerModal.onOpen();
+  }, [loginModal, registerModal]);
+
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading title="Welcome back !" subtitle="Login to your account" />
@@ -102,12 +108,12 @@ const LoginModal = () => {
         "
       >
         <div className="justify-center flex flex-row item-center gap-2">
-          <div>Already have an account ?</div>
+          <div>First time using Airnb ?</div>
           <div
-            onClick={registerModal.onClose}
+            onClick={toggle}
             className="text-black cursor-pointer hover:underline"
           >
-            Log in
+            Create an account
           </div>
         </div>
       </div>
