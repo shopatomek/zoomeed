@@ -1,6 +1,9 @@
 "use client";
 import useRentModal from "@/app/hooks/useRentModal";
 import Modal from "./Modal";
+import { useMemo, useState } from "react";
+import Heading from "../Heading";
+import { categories } from "../navbar/Categories";
 
 enum STEPS {
   CATEGORY = 0,
@@ -11,20 +14,76 @@ enum STEPS {
   PRICE = 5,
 }
 
-const RendModal = () => {
+const RentModal = () => {
   const rentModal = useRentModal();
+
+  const [step, setStep] = useState(STEPS.CATEGORY);
+
+  const onBack = () => {
+    setStep((value) => value - 1);
+  };
+
+  const onNext = () => {
+    setStep((value) => value + 1);
+  };
+
+  const actionLabel = useMemo(() => {
+    if (step === STEPS.PRICE) {
+      return "Create";
+    }
+    return "Next";
+  }, [step]);
+
+  const secondaryActionLabel = useMemo(() => {
+    if (step === STEPS.CATEGORY) {
+      return undefined;
+    }
+    return "Back";
+  }, [step]);
+
+  let bodyContent = (
+    <div className="flex flex-col gap-8">
+      <Heading
+        title="Which describes your place?"
+        subtitle="Select a category"
+      />
+      <div
+        className="
+          grid 
+          grid-cols-1 
+          md:grid-cols-2 
+          gap-3
+          max-h-[50vh]
+          overflow-y-auto
+        "
+      >
+        {categories.map((item) => (
+          <div key={item.label} className="col-span-1">
+            {item.label}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <Modal
       isOpen={rentModal.isOpen}
       onClose={rentModal.onClose}
       onSubmit={rentModal.onClose}
-      actionLabel="Submit"
+      actionLabel={actionLabel}
+      secondaryActionLabel={secondaryActionLabel}
+      secondaryAction={step === STEPS.CATEGORY ? undefined : onBack}
       title="Airnbnb your home"
+      body={bodyContent}
     />
   );
 };
 
-export default RendModal;
+export default RentModal;
 
 // w JavaScript, enum (wyliczenie) jest strukturą danych, która pozwala na zdefiniowanie zestawu nazwanych wartości, które są powiązane z określonymi liczbami lub innymi wartościami. Enumy są przydatne, gdy chcemy nadać nazwy i wartości symboliczne zestawowi powiązanych wartości.
+
+// useMemo() jest jednym z hooków w bibliotece React, który pozwala na optymalizację wydajności komponentów funkcyjnych poprzez pamiętanie (memoizację) wyniku obliczeń.
+
+// Głównym celem useMemo() jest unikanie niepotrzebnych obliczeń, które mogą być kosztowne w kontekście wydajności. Ten hook przyjmuje dwie wartości: funkcję obliczającą (memoizowaną) i zależności. Funkcja obliczająca jest wywoływana tylko wtedy, gdy jedna z zależności się zmienia. W przeciwnym razie, wynik obliczeń jest przechowywany i zwracany bez ponownego obliczania.
