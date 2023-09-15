@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 import Heading from "../Heading";
 import { categories } from "../navbar/Categories";
-import Map from "../Map";
+import dynamic from "next/dynamic";
 
 enum STEPS {
   CATEGORY = 0,
@@ -46,6 +46,13 @@ const RentModal = () => {
 
   const category = watch("category");
   const location = watch("location");
+  const Map = useMemo(
+    () =>
+      dynamic(() => import("../Map"), {
+        ssr: false,
+      }),
+    [location]
+  );
 
   // useForm<FieldValues> oznacza, że hook useForm jest generyczny i przyjmuje typ FieldValues jako argument. FieldValues to generyczny typ, który reprezentuje strukturę danych formularza. Możesz zdefiniować ten typ według potrzeb swojego formularza.
 
@@ -117,7 +124,7 @@ const RentModal = () => {
           value={location}
           onChange={(value) => setCustomValue("location", value)}
         />
-        <Map />
+        <Map center={location?.latlng} />
       </div>
     );
   }
