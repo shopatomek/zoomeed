@@ -2,6 +2,7 @@
 import useRentModal from "@/app/hooks/useRentModal";
 import Modal from "./Modal";
 import { useMemo, useState } from "react";
+import { FieldValues, useForm } from "react-hook-form";
 import Heading from "../Heading";
 import { categories } from "../navbar/Categories";
 import CategoryInput from "../inputs/CategoryInput";
@@ -19,6 +20,29 @@ const RentModal = () => {
   const rentModal = useRentModal();
 
   const [step, setStep] = useState(STEPS.CATEGORY);
+
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    watch,
+    formState: { errors },
+    reset,
+  } = useForm<FieldValues>({
+    defaultValues: {
+      category: "",
+      location: null,
+      guestCount: 1,
+      roomCount: 1,
+      bathroomCount: 1,
+      imageSrc: "",
+      price: 1,
+      title: "",
+      description: "",
+    },
+  });
+
+  // useForm<FieldValues> oznacza, że hook useForm jest generyczny i przyjmuje typ FieldValues jako argument. FieldValues to generyczny typ, który reprezentuje strukturę danych formularza. Możesz zdefiniować ten typ według potrzeb swojego formularza.
 
   const onBack = () => {
     setStep((value) => value - 1);
@@ -88,8 +112,18 @@ const RentModal = () => {
 
 export default RentModal;
 
+// W tym kodzie używamy hooka useForm z biblioteki react-hook-form do zarządzania formularzem i jego stanem.
+
+// // useForm jest hookiem, który zwraca obiekt zawierający różne funkcje i wartości, które pomagają w obsłudze formularzy.
+
+// // W linii const { register, handleSubmit, setValue, watch, formState: { errors }, reset } = useForm<FieldValues>({ ... }), destrukturyzujemy ten zwrócony obiekt, pobierając potrzebne funkcje i wartości do zmiennych.
+
+// ENUM
+
 // w JavaScript, enum (wyliczenie) jest strukturą danych, która pozwala na zdefiniowanie zestawu nazwanych wartości, które są powiązane z określonymi liczbami lub innymi wartościami. Enumy są przydatne, gdy chcemy nadać nazwy i wartości symboliczne zestawowi powiązanych wartości.
 
 // useMemo() jest jednym z hooków w bibliotece React, który pozwala na optymalizację wydajności komponentów funkcyjnych poprzez pamiętanie (memoizację) wyniku obliczeń.
 
 // Głównym celem useMemo() jest unikanie niepotrzebnych obliczeń, które mogą być kosztowne w kontekście wydajności. Ten hook przyjmuje dwie wartości: funkcję obliczającą (memoizowaną) i zależności. Funkcja obliczająca jest wywoływana tylko wtedy, gdy jedna z zależności się zmienia. W przeciwnym razie, wynik obliczeń jest przechowywany i zwracany bez ponownego obliczania.
+
+//
