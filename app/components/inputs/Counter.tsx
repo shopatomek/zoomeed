@@ -37,7 +37,7 @@ const Counter: React.FC<CounterProps> = ({
           className="w 10 h-10 rounded-full border-[1px] border-neutral-500 flex items-center justify-center text-neutral-600 cursor-pointer hover:opacity-50 transition"
           onClick={onReduce}
         >
-          <AiOutlineMinus size={20} />
+          <AiOutlineMinus />
         </div>
         <div className="font-light text-xl text-neutral-600">{value}</div>
         <div
