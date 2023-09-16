@@ -9,6 +9,7 @@ import Heading from "../Heading";
 import { categories } from "../navbar/Categories";
 import dynamic from "next/dynamic";
 import Counter from "../inputs/Counter";
+import ImageUpload from "../inputs/ImageUpload";
 
 enum STEPS {
   CATEGORY = 0,
@@ -162,6 +163,18 @@ const RentModal = () => {
           // @ts-ignore
           onChange={(value) => setCustomValue("bathroomCount", value)}
         />
+      </div>
+    );
+  }
+
+  if (step === STEPS.IMAGES) {
+    bodyContent = (
+      <div className="flex flex-col gap-8">
+        <Heading
+          title="Add a photo of your place?"
+          subtitle="Show guest the place"
+        />
+        <ImageUpload />
       </div>
     );
   }
