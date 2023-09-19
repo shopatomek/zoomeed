@@ -212,6 +212,24 @@ const RentModal = () => {
       </div>
     );
   }
+
+  if (step === STEPS.PRICE) {
+    bodyContent = (
+      <div className="flex flex-col gap-8">
+        <Heading title="How much do you charge ?" subtitle="Per night" />
+        <Input
+          id="price"
+          label="Price"
+          formatPrice={true}
+          type="number"
+          disabled={isLoading}
+          register={register}
+          errors={errors}
+          required
+        />
+      </div>
+    );
+  }
   return (
     <Modal
       isOpen={rentModal.isOpen}
